@@ -243,4 +243,3 @@ config.log
 *.code-workspace
 
 # End of https://www.toptal.com/developers/gitignore/api/python,scons,visualstudiocode,godot,c++
-project/bin/

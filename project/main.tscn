@@ -6,7 +6,6 @@
 [node name="main" type="Spatial"]
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 512, 319 )
 texture = ExtResource( 1 )
 centered = false
 script = ExtResource( 2 )
