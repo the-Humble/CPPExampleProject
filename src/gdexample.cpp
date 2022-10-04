@@ -6,6 +6,7 @@ void GDExample::_register_methods() {
     register_method("_process", &GDExample::_process);
     register_property<GDExample, float>("amplitude", &GDExample::amplitude, 10.0);
     register_property<GDExample, float>("speed", &GDExample::set_speed, &GDExample::get_speed, 1.0);
+    
 }
 
 GDExample::GDExample() {
