@@ -69,12 +69,15 @@ elif env['platform'] == "windows":
     else:
         env.Append(CCFLAGS = ['-O2', '-EHsc', '-DNDEBUG', '-MD'])
 
+
 if env['target'] in ('debug', 'd'):
     cpp_library += '.debug'
 else:
     cpp_library += '.release'
 
 cpp_library += '.' + str(bits)
+
+env['PDB'] = env['target_path'] + env['target_name'] + '.pdb'
 
 # make sure our binding library is properly includes
 env.Append(CPPPATH=['.', godot_headers_path, cpp_bindings_path + 'include/', cpp_bindings_path + 'include/core/', cpp_bindings_path + 'include/gen/'])
